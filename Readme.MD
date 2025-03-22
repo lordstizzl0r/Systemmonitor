@@ -17,8 +17,8 @@ A sleek, lightweight desktop widget that monitors your system resources in real-
 
 ## 📸 Screenshots
 
-![Mini Widget](docs/screenshots/mini-widget.png)
-![Expanded View](docs/screenshots/expanded-view.png)
+![Mini Widget](docs/screenshots/mini-variant.png)
+![Expanded View](docs/screenshots/extended-variant.png)
 
 ## 🚀 Installation
 
