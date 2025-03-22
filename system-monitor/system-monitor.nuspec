@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>systemmonitor</id>
+    <version>1.0.0</version>
+    <title>System Monitor</title>
+    <authors>Ruben Seelmeyer</authors>
+    <projectUrl>https://github.com/lordstizzl0r/system-monitor</projectUrl>
+    <licenseUrl>https://github.com/lordstizzl0r/system-monitor/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Electron-App zur Überwachung von Systemressourcen</description>
+    <tags>system monitor resource electron</tags>
+    <dependencies>
+      <dependency id="ffmpeg" version="4.4.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
