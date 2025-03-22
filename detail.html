@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>System Monitor - Details</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #1a1a1a;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        .close-button {
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .close-button:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: #00ff95;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .stat {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            opacity: 0.7;
+        }
+
+        .stat-value {
+            font-size: 20px;
+            margin-top: 5px;
+        }
+
+        .processes {
+            grid-column: span 2;
+        }
+
+        .process-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .process {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        #drag-region {
+            -webkit-app-region: drag;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="drag-region"></div>
+    
+    <div class="header">
+        <h1>System Monitor</h1>
+        <button class="close-button" id="close-button">×</button>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h2>CPU</h2>
+            <div class="stat-grid">
+                <div class="stat">
+                    <div class="stat-label">Usage</div>
+                    <div class="stat-value" id="cpu-usage">0%</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-label">Temperature</div>
+                    <div class="stat-value" id="cpu-temp">0°C</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Memory</h2>
+            <div class="stat-grid">
+                <div class="stat">
+                    <div class="stat-label">Usage</div>
+                    <div class="stat-value" id="memory-usage">0%</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-label">Used/Total</div>
+                    <div class="stat-value" id="memory-total">0/0 GB</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Storage</h2>
+            <div class="stat-grid">
+                <div class="stat">
+                    <div class="stat-label">Usage</div>
+                    <div class="stat-value" id="disk-usage">0%</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-label">Used/Total</div>
+                    <div class="stat-value" id="disk-total">0/0 GB</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Network</h2>
+            <div class="stat-grid">
+                <div class="stat">
+                    <div class="stat-label">Upload</div>
+                    <div class="stat-value" id="network-up">0 KB/s</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-label">Download</div>
+                    <div class="stat-value" id="network-down">0 KB/s</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card processes">
+            <h2>Top Processes</h2>
+            <div class="process-list" id="process-list">
+                <!-- Processes will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="detail.js"></script>
+</body>
+</html>

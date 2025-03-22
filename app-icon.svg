@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- Hintergrund -->
+  <circle cx="128" cy="128" r="124" fill="#111928" />
+  <circle cx="128" cy="128" r="118" fill="#1F2937" />
+  
+  <!-- Monitor-Umriss - etwas dicker für bessere Sichtbarkeit in der Taskbar -->
+  <rect x="64" y="64" width="128" height="96" rx="8" ry="8" fill="none" stroke="#FFFFFF" stroke-width="8" />
+  
+  <!-- Monitorständer -->
+  <rect x="108" y="160" width="40" height="10" fill="#FFFFFF" />
+  <rect x="118" y="170" width="20" height="22" fill="#FFFFFF" />
+  
+  <!-- CPU-Linie - für Taskbar deutlicher -->
+  <path d="M80 96 L110 86 L128 128 L176 96" stroke="#00ff95" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- RAM-Linie - für Taskbar deutlicher -->
+  <path d="M80 140 L110 118 L150 140 L176 118" stroke="#00a6ff" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Zentraler Punkt -->
+  <circle cx="128" cy="128" r="10" fill="#ff00ea" />
+  
+  <!-- Glanz-Effekt -->
+  <circle cx="90" cy="90" r="15" fill="white" opacity="0.15" />
+</svg>
