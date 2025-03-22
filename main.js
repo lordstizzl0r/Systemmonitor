@@ -1,9 +1,28 @@
 const { app, BrowserWindow, ipcMain, screen, shell } = require("electron");
 const path = require("path");
 const si = require("systeminformation");
+const { autoUpdater } = require("electron-updater");
 
 let mainWindow;
 let isExpanded = false;
+
+autoUpdater.checkForUpdatesAndNotify();
+
+autoUpdater.on("update-available", () => {
+  dialog
+    .showMessageBox({
+      type: "info",
+      title: "Update verfügbar",
+      message:
+        "Eine neue Version ist verfügbar. Möchten Sie jetzt aktualisieren?",
+      buttons: ["Ja", "Nein"],
+    })
+    .then((result) => {
+      if (result.response === 0) {
+        autoUpdater.downloadUpdate();
+      }
+    });
+});
 
 function createWindow() {
   const display = screen.getPrimaryDisplay();
