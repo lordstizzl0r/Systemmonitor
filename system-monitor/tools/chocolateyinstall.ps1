@@ -1,6 +1,6 @@
 $ErrorActionPreference = 'Stop'
 
-$packageName = 'system-monitor'
+$packageName = 'systemmonitor'
 $toolsDir    = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $fileLocation = Join-Path $toolsDir 'System-Monitor-Setup-1.0.0.exe'
 

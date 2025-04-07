@@ -1,29 +1,24 @@
 {
-  "name": "system-monitor",
+  "name": "systemmonitor",
   "version": "1.0.0",
   "description": "A sleek system monitor widget for desktop",
   "author": "Ruben Seelmeyer",
   "license": "MIT",
   "main": "main.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/lordstizzl0r/system-monitor.git"
-  },
   "scripts": {
     "start": "electron .",
     "dev": "electron . --debug",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
-    "dist-win": "electron-builder --win",
-    "dist-mac": "electron-builder --mac",
-    "dist-linux": "electron-builder --linux"
+    "dist-win": "electron-builder --win"
   },
   "build": {
-    "appId": "de.seelmeyerit.system-monitor",
-    "productName": "System Monitor",
+    "appId": "de.seelmeyerit.systemmonitor",
+    "productName": "System-Monitor",
     "directories": {
       "output": "dist"
     },
+    "asar": true,
     "win": {
       "target": [
         {
@@ -42,19 +37,8 @@
     "nsis": {
       "oneClick": true,
       "perMachine": false,
-      "allowToChangeInstallationDirectory": false,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true
-    },
-    "mac": {
-      "target": "dmg",
-      "icon": "icons/mac/icon.icns",
-      "category": "public.app-category.utilities"
-    },
-    "linux": {
-      "target": "AppImage",
-      "icon": "icons/png",
-      "category": "Utility"
     },
     "extraResources": [
       {

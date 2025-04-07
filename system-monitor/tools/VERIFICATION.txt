@@ -1,0 +1,42 @@
+﻿VERIFICATION
+
+Hash: SHA256: 9F9A82E6C439AE9A67A036874E74F2D23C96DABB0028191D52D6AA9FF690DED6
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+Verification Process
+
+The installer/executable can be verified by following these steps:
+
+Go to the official GitHub repository: https://github.com/lordstizzl0r/systemmonitor/releases
+Download the System-Monitor-Setup-1.0.0.exe file from the release page
+Use Get-FileHash in PowerShell to calculate the SHA256 hash:
+powershellKopierenGet-FileHash -Path "path\to\downloaded\System-Monitor-Setup-1.0.0.exe" -Algorithm SHA256
+
+Compare the hash with the one of the file included in this package:
+powershellKopierenGet-FileHash -Path "tools\System-Monitor-Setup-1.0.0.exe" -Algorithm SHA256
+
+The hashes should match
+
+
+This package was built using Electron-Builder with the following configuration:
+
+GitHub Repository: https://github.com/lordstizzl0r/systemmonitor
+Built directly from source code using npm run dist command
+The build process uses Electron-Builder to package the application
+No files were modified after the build process
+
+
+
+Package Contents
+The package contains the following binary files:
+
+System-Monitor-Setup-1.0.0.exe: The main installer executable
+
+Dependencies
+This package has a dependency on ffmpeg, which is resolved automatically through Chocolatey.
+Notes
+
+The author of this package is also the author of the software
+The software is open source and released under the MIT license
+The source code is available at: https://github.com/lordstizzl0r/systemmonitor

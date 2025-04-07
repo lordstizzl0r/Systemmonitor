@@ -5,8 +5,8 @@
     <version>1.0.0</version>
     <title>System Monitor</title>
     <authors>Ruben Seelmeyer</authors>
-    <projectUrl>https://github.com/lordstizzl0r/system-monitor</projectUrl>
-    <licenseUrl>https://github.com/lordstizzl0r/system-monitor/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/lordstizzl0r/Systemmonitor</projectUrl>
+    <licenseUrl>https://github.com/lordstizzl0r/Systemmonitor/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Electron-App zur Überwachung von Systemressourcen</description>
     <tags>system monitor resource electron</tags>

@@ -30,11 +30,11 @@ Install via Chocolatey:
 choco install systemmonitor
 ```
 
-Or download the latest installer from the [Releases](https://github.com/lordstizzl0r/system-monitor/releases) page.
+Or download the latest installer from the [Releases](https://github.com/lordstizzl0r/systemmonitor/releases) page.
 
 ### macOS and Linux
 
-Download the appropriate package from the [Releases](https://github.com/lordstizzl0r/system-monitor/releases) page.
+Download the appropriate package from the [Releases](https://github.com/lordstizzl0r/systemmonitor/releases) page.
 
 ## 🔧 Development
 
@@ -49,8 +49,8 @@ Download the appropriate package from the [Releases](https://github.com/lordstiz
 1. Clone the repository
 
    ```
-   git clone https://github.com/lordstizzl0r/system-monitor.git
-   cd system-monitor
+   git clone https://github.com/lordstizzl0r/systemmonitor.git
+   cd systemmonitor
    ```
 
 2. Install dependencies
@@ -126,7 +126,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Ruben Seelmeyer
 
 - GitHub: [lordstizzl0r](https://github.com/lordstizzl0r)
-- Project Link: [https://github.com/lordstizzl0r/system-monitor](https://github.com/lordstizzl0r/system-monitor)
+- Project Link: [https://github.com/lordstizzl0r/systemmonitor](https://github.com/lordstizzl0r/systemmonitor)
 
 ---
 
